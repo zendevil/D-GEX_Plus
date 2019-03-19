@@ -1,0 +1,6 @@
+*.pyc
+*.gctx
+GD462.GeneQuantRPKM.50FN.samplename.resk10.txt
+l1ktools-1.1/data
+pylearn2
+*~
