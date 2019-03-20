@@ -543,7 +543,7 @@ class GCT(object):
                                             row_inds=row_inds,
                                             convert_to_double=convert_to_double)
                 else:
-                    self._read_gctx('/mnt/c/Users/Prikshet/OneDrive/Junior/Obrien Spring/200H/research/D-GEX/'+src,verbose=verbose,cid=cid,rid=rid,col_inds=col_inds,
+                    self._read_gctx('/mnt/c/Users/Prikshet/OneDrive/Junior/Obrien Spring/200H/research/D-GEX_Plus/'+src,verbose=verbose,cid=cid,rid=rid,col_inds=col_inds,
                                 row_inds=row_inds, frame=frame)
                     print('reading', src)
             else:
@@ -672,7 +672,7 @@ class GCT(object):
                 warnings.simplefilter("ignore")
                 # if there's no .gctx at the end, add the dimensions and the file extension
                 #if not re.match('.*.gctx$', ofile):
-                ofile = '{0}_n{1}x{2}.gctx'.format('\mnt\c\Users\Prikshet\OneDrive\Junior\Obrien Spring\200H\research\D-GEX\l1ktools-1.1\data', self.matrix.shape[1],
+                ofile = '{0}_n{1}x{2}.gctx'.format('\mnt\c\Users\Prikshet\OneDrive\Junior\Obrien Spring\200H\research\D-GEX_Plus', self.matrix.shape[1],
                                                        self.matrix.shape[0])
                 h5f = tables.open_file(ofile, mode = 'w')
                 h5f.set_node_attr('/', 'version', 'GCTX1.0')
